@@ -162,12 +162,6 @@ small {
     margin-bottom: 1em;
 }
 
-/* p {
-    font-family: var(--font-alternativa);
-    font-size: var(--font-18);
-    font-weight: 400;
-} */
-
 /* Inicio -------------------------------------------------------------------------*/
 
 h1 {
@@ -506,9 +500,11 @@ form input {
     width: 5em;
     border-radius: 3em;
 }
-.texto-reseña{
+
+.texto-reseña {
     font-size: var(--font-18);
 }
+
 .calificacion {
     padding-right: 0.5em;
 }
@@ -531,7 +527,7 @@ form input {
     justify-content: space-between;
     border: 6px;
     border-style: solid;
-    border-color:#7eb341;
+    border-color: #7eb341;
     border-radius: 3em;
     padding: 0.5em;
     background-color: rgb(217, 217, 217, 90%);
@@ -546,7 +542,7 @@ form input {
     justify-content: space-between;
     border: 6px;
     border-style: solid;
-    border-color:#7eb341;
+    border-color: #7eb341;
     border-radius: 3em;
     padding: 0.5em;
     background-color: rgb(217, 217, 217, 85%);
@@ -562,7 +558,7 @@ form input {
     justify-content: space-between;
     border: 6px;
     border-style: solid;
-    border-color:#7eb341;
+    border-color: #7eb341;
     border-radius: 3em;
     padding: 0.5em;
     background-color: rgb(217, 217, 217, 85%);
@@ -577,7 +573,7 @@ form input {
     justify-content: space-between;
     border: 6px;
     border-style: solid;
-    border-color:#7eb341;
+    border-color: #7eb341;
     border-radius: 3em;
     padding: 0.5em;
     background-color: rgb(217, 217, 217, 85%);
@@ -661,7 +657,7 @@ input {
     border-style: solid;
     border-color: rgb(239, 127, 23, 60%);
     border-radius: 2em;
-    padding: 0.5em 1.5em;
+    padding: 1em;
 }
 
 .articulo-1 {
@@ -694,10 +690,12 @@ input {
 
 .art-descripcion {
     margin-top: 0.5em;
+    font-size: var(--font-18);
 }
 
 .art-precio {
     margin-top: 0.5em;
+    font-size: var(--font-20);
 }
 
 span {
@@ -1126,7 +1124,7 @@ span p {
         padding: 0.5em;
     }
 
-    .texto-reseña{
+    .texto-reseña {
         font-size: var(--font-18);
     }
 
@@ -1339,7 +1337,6 @@ span p {
         font-family: var(--font-alternativa);
         font-size: var(--font-18);
         font-weight: 500;
-        /* padding-botton:4px; */
     }
 
     /* fin carrito */
@@ -1536,7 +1533,6 @@ span p {
         grid-row: 2;
         font-size: var(--font-16);
         font-weight: 400;
-        /* margin-top: 1em; */
     }
 
     .precio-producto-card-9 {
@@ -1714,10 +1710,12 @@ span p {
     .reseñas img {
         padding: 0.5em;
     }
-.texto-reseña{
-    font-size: var(--font-14);
-    margin-left: 1em;
-}
+
+    .texto-reseña {
+        font-size: var(--font-14);
+        margin-left: 1em;
+    }
+
     .titulo-reseñas {
         grid-column: 1/2;
         margin-bottom: 0.5em;
@@ -1993,7 +1991,6 @@ span p {
         min-height: 400px;
         max-height: 926px;
         grid-template-columns: 7% repeat(4, 0.5fr) 7%;
-        /* grid-template-rows: 17% 15% 15% 20%; */
         grid-template-rows: repeat(4, 1fr);
         margin: 0em 0em 2.5em 0em;
         gap: 2em 1em;
@@ -2047,9 +2044,7 @@ span p {
     .carrusel-3 {
         grid-column: 2/6;
         grid-row: 2/5;
-        /* margin-top: 5em; */
         margin: 2em 3em 0em 3em;
-        /* padding: 0em 4em; */
         padding-top: 2em;
         text-align: center;
     }
@@ -2211,18 +2206,8 @@ span p {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-    }
-
-    .card-1,
-    .card-2,
-    .card-3,
-    .card-4,
-    .card-5,
-    .card-6,
-    .card-7,
-    .card-8 {
         padding: 0.5em;
+
     }
 
     .titulo-card {
@@ -2370,17 +2355,19 @@ span p {
         width: 50px;
         padding: 0.2em;
     }
-    .texto-reseña{
+
+    .texto-reseña {
         font-size: var(--font-12);
         margin-left: 1em;
     }
+
     .titulo-reseñas {
         grid-column: 1/2;
         height: 40px;
         margin: 0.2em;
         font-size: var(--font-20);
         align-content: center;
-       
+
     }
 
 
@@ -2419,6 +2406,7 @@ span p {
 
     /* fin del responsive-reseña */
 
+    /* responsive-carrito de compras-------------------------------------------------- */
     h4 {
         font-size: var(--font-16);
     }
@@ -2455,13 +2443,8 @@ span p {
     }
 
     input {
-
-        /* border: solid; */
-        /* border-color: #ef7f17; */
-        /* border-radius: 0.5em; */
         width: 2.5em;
         height: 2.5em;
-        /* text-align: center; */
     }
 
     .articulo-1,
@@ -2514,8 +2497,6 @@ span p {
     span {
         grid-column: 1/9;
         grid-row: 7;
-        /* border-style: solid; */
-        /* border-color: #ef7f17; */
         border-radius: 1em;
         padding: 1em;
     }
@@ -2528,10 +2509,6 @@ span p {
     .resumen-1,
     .resumen-2,
     .resumen-3 {
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center; */
         padding-bottom: 1em;
     }
 
@@ -2540,8 +2517,6 @@ span p {
         grid-row: 8;
         display: flex;
         flex-direction: row;
-        /* justify-content: space-around;
-        align-items: center; */
         padding: 0.5em;
         border: 4px;
         border-style: solid;
@@ -2551,16 +2526,14 @@ span p {
 
     .parrafo-light {
         font-size: var(--font-20);
-        /* font-weight: 400; */
     }
 
     .parrafo-bold {
         font-size: var(--font-24);
-        /* font-weight: 700; */
     }
 
     .boton-comprar {
-        /* display: grid; */
+        display: grid;
         grid-column: 2/8;
         grid-row: 9;
         justify-items: center;
@@ -2574,9 +2547,8 @@ span p {
     }
 
     .boton-comprar p {
-        /* font-family: var(--font-alternativa); */
         font-size: var(--font-14);
-        /* font-weight: 500; */
+       
     }
 
     /* fin res-carrito */
