@@ -64,6 +64,15 @@ a {
     text-decoration: none;
     color: inherit
 }
+a:hover{
+    font-weight: 700;
+    color: #ef7f17;
+}
+
+svg:hover{
+    color: #ef7f17;
+    cursor: pointer;
+}
 
 ul,
 ol,
