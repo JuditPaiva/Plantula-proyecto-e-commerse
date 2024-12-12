@@ -54,122 +54,48 @@
         </nav>
     </header>
 
-    <main>
-        <section class="carrito">
-            <h2 class="titulo-carrito">Carrito de compras</h2>
-            <h3 class="subtitulo-1">Cantidad</h3>
-            <h3 class="subtitulo-2">Detalle de producto</h3>
-            <div id="carro-container">  
-                <!-- Los artículos del carrito se agregarán aquí -->  
-           
-
-            <article class="articulo-1">
-
-                <div class="cantidad-1">
-                    <label for="cantidad">Cantidad</label>
-                    <input type="number" name="cantidad" id="cantidad" placeholder="0">
-                </div>
-
-                <Figure class="art-img">
-                    <img src="./img/art-img1.com.png" alt="Mix de suculentas">
-                </Figure>
-
-                <div class="detalle">
-                    <h4>Flor Federal</h4>
-                    <p class="art-descripcion">Ubicación: Exterior a pleno sol, o media sombra</p>
-                    <p class="art-precio">$3.000</p>
-                </div>
-
-                <div class="cancel">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16l-1.58 14.22A2 2 0 0 1 16.432 22H7.568a2 2 0 0 1-1.988-1.78zm3.345-2.853A2 2 0 0 1 9.154 2h5.692a2 2 0 0 1 1.81 1.147L18 6H6zM2 6h20m-12 5v5m4-5v5" />
-                    </svg>
-
-                </div>
-
-            </article>
-
-            <article class="articulo-2">
-                <div>
-                    <Label for="cantidad">Cantidad</Label>
-                    <input type="number" name="cantidad" id="cantidad" placeholder="0">
-                </div>
-
-                <figure class="art-img">
-                    <img src="./img/art-img2.com.png" alt="Ave del paraiso">
-                </figure>
-
-                <div class="detalle">
-                    <h4>Anthorium</h4>
-                    <p class="art-descripcion">Ubicación: Exterior a pleno sol, o media sombra</p>
-                    <p class="art-precio">$1.250</p>
-                </div>
-
-                <div class="cancel">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16l-1.58 14.22A2 2 0 0 1 16.432 22H7.568a2 2 0 0 1-1.988-1.78zm3.345-2.853A2 2 0 0 1 9.154 2h5.692a2 2 0 0 1 1.81 1.147L18 6H6zM2 6h20m-12 5v5m4-5v5" />
-                    </svg>
-                </div>
-
-            </article>
-
-            <article class="articulo-3">
-                <div>
-                    <label for="cantidad">Cantidad</label>
-                    <input type="number" name="cantidad" id="cantidad" placeholder="0">
-                </div>
-
-                <Figure class="art-img">
-                    <img src="./img/art-img3.com.png" alt="Mix de suculentas">
-                </Figure>
-                <div class="detalle">
-                    <h4>Calibrachoa</h4>
-                    <p class="art-descripcion">Ubicacion: Interior luminoso y riego moderado</p>
-                    <p class="art-precio">$12.000</p>
-                </div>
-
-                <div class="cancel">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16l-1.58 14.22A2 2 0 0 1 16.432 22H7.568a2 2 0 0 1-1.988-1.78zm3.345-2.853A2 2 0 0 1 9.154 2h5.692a2 2 0 0 1 1.81 1.147L18 6H6zM2 6h20m-12 5v5m4-5v5" />
-                    </svg>
-                </div>
-
-            </article>
-        </div>
-
-            <h3 class="subtitulo-3">RESUMEN</h3>
-
-            <span class="resumen">
-                <div class="resumen-1">
-                    <p>Cantidad de productos</p>
-                    <p>4 unidades</p>
-                </div>
-
-                <div class="resumen-2">
-                    <p>Subtotal</p>
-                    <p>$ 17.500</p>
-                </div>
-
-                <div class="resumen-3">
-                    <p>Envio</p>
-                    <p>$ 2.500</p>
-                </div>
-            </span>
-
-            <div class="total-resumen">
-                <p class="parrafo-light">Total</p>
-                <p class="parrafo-bold">$20.000</p>
-            </div>
-            <div class="boton-comprar">
-                <p>Comprar</p>
-            </div>
-
-
-        </section>
-    </main>
+    <main>  
+        <section class="carrito">  
+            <h2 class="titulo-carrito">Carrito de compras</h2>  
+            
+            <h3 class="subtitulo-1">Cantidad</h3>  
+            <h3 class="subtitulo-2">Detalle de producto</h3>  
+    
+            <!-- Contenedor para los artículos del carrito -->  
+            <div id="carro-container" class="carros">   
+                <!-- Los artículos del carrito se agregarán aquí dinámicamente -->  
+            </div>  
+    
+            <h3 class="subtitulo-3">RESUMEN</h3>  
+            
+            
+            <span class="resumen">  
+                <div class="resumen-1">  
+                    <p>Cantidad de productos</p>  
+                    <p id="cantidad-productos">0 unidades</p>  
+                </div>  
+    
+                <div class="resumen-2">  
+                    <p>Subtotal</p>  
+                    <p id="subtotal">0</p>  
+                </div>  
+    
+                <div class="resumen-3">  
+                    <p>Envio</p>  
+                    <p id="envio"></p>  
+                </div>  
+            </span>  
+    
+            <div class="total-resumen">  
+                <p class="parrafo-light">Total</p>  
+                <p class="parrafo-bold" id="total">\$0</p>  
+            </div>  
+            
+            <div class="boton-comprar">  
+                <p>Comprar</p>  
+            </div>  
+        </section>  
+    </main>  
     <footer>
         <nav class="nav-footer">
             <div class="institucional">

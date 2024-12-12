@@ -58,7 +58,45 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main>  
+        <form action="https://formsubmit.co/juditpaivait@gmail.com" class="form-contacto" method="POST" onsubmit="return validateForm()">  
+    
+            <h2 class="titulo-contacto">Contacto</h2>  
+    
+            <h3 class="titulo-datos">Datos personales</h3>  
+    
+            <div class="input-form1">  
+                <label for="nombre">Nombre</label>  
+                <input type="text" name="nombre" id="nombre" onfocus="clearError('nombreError')">  
+                <span class="error" id="nombreError"></span>  <!-- Mensaje de error para el nombre -->  
+            </div>  
+    
+            <div class="input-form2">  
+                <label for="apellido">Apellido</label>  
+                <input type="text" name="apellido" id="apellido" onfocus="clearError('apellidoError')">  
+                <span class="error" id="apellidoError"></span> <!-- Mensaje de error para el apellido -->  
+            </div>  
+    
+            <div class="input-form3">  
+                <label for="mail">Email</label>  
+                <input type="email" name="mail" id="mail" onfocus="clearError('emailError')">  
+                <span class="error" id="emailError"></span>   <!-- Mensaje de error para el email -->  
+            </div>  
+    
+            <h3 class="titulo-textarea">Comentario</h3>  
+    
+            <div class="textarea">  
+                <label for="textarea"></label>  
+                <textarea name="textarea" id="textarea" placeholder="Deja aquí tu comentario" onfocus="clearError('comentarioError')"></textarea>  
+                <span class="error" id="comentarioError"></span>  <!-- Mensaje de error para el comentario -->  
+            </div>  
+    
+            <button class="boton-form" type="submit">Enviar</button>  
+        </form>  
+    </main> 
+
+
+    <!-- <main>
         <form action="https://formsubmit.co/juditpaivait@gmail.com" class="form-contacto" method="POST">
 
             <h2 class="titulo-contacto">Contacto</h2>
@@ -94,7 +132,7 @@
 
             <button class="boton-form" type="submit">Enviar</button>
         </form>
-    </main>
+    </main> -->
     <footer>
         <nav class="nav-footer">
             <div class="institucional">
